@@ -7,6 +7,8 @@ public class Metody {
         System.out.println(czyParzysta(3));
         System.out.println(czyPodzielna(15));
         System.out.println(doTrzeciej(3));
+        System.out.println(pierwiastekKwadratowy(4));
+        System.out.println(sprCzyTrojkatProstokatny(5,4,3));
     }
 
     public static int zwracaWiek(){
@@ -32,7 +34,21 @@ public class Metody {
     }
 
     public static int doTrzeciej(int a){
-        double b = a;
-        return (int) Math.pow(b, 3.0);
+        return (int) Math.pow(a, 3.0);
+    }
+
+    public static double pierwiastekKwadratowy(int a){
+        return Math.sqrt(a);
+    }
+
+    private static boolean sprCzyTrojkatProstokatny(int a, int b, int c){
+        if (c > a && c > b){
+            return a * a + b * b == c * c;
+        }else if (b > c && b > a){
+            return a * a + c * c == b * b;
+        }else if (a > c && a > b){
+            return b * b + c * c == a * a;
+        }
+        return false;
     }
 }
