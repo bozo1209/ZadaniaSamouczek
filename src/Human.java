@@ -13,11 +13,11 @@
 
 //zad 1
 public class Human {
-    private String imie;
-    private String plec;
-    private int wiek;
-    private double wzrost;
-    private double waga;
+    private final String imie;
+    private final String plec;
+    private final int wiek;
+    private final double wzrost;
+    private final double waga;
 
     public Human(String imie, String plec, int wiek, double wzrost, double waga) {
         this.imie = imie;
@@ -51,8 +51,8 @@ public class Human {
 
 //zad 2
 class Prostokat{
-    private int dlugosc;
-    private int szerokosc;
+    private final int dlugosc;
+    private final int szerokosc;
 
     Prostokat(int dlugosc, int szerokosc) {
         this.dlugosc = dlugosc;
