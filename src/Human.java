@@ -71,3 +71,48 @@ class Prostokat{
         return Math.sqrt(Math.pow(dlugosc,2) + Math.pow(szerokosc,2));
     }
 }
+
+//zad 3
+class MyNumber{
+    public int liczba;
+
+    MyNumber(int liczba){
+        this.liczba = liczba;
+    }
+
+//    zad 4
+    boolean isOdd(){
+        return liczba % 2 != 0;
+    }
+
+//    zad 5
+    boolean isEven(){
+        return liczba % 2 == 0;
+    }
+
+//    zad 6
+    double sqrt(){
+        return Math.sqrt(liczba);
+    }
+
+//    zad 7
+    double pow(MyNumber x){
+        return Math.pow(liczba, x.liczba);
+    }
+
+//    zad 8
+    MyNumber add(MyNumber x){
+        return new MyNumber(liczba + x.liczba);
+    }
+
+//    zad 9
+    MyNumber subtract(MyNumber x){
+        return new MyNumber(liczba - x.liczba);
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(liczba);
+    }
+
+}

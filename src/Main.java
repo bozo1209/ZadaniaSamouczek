@@ -11,5 +11,14 @@ public class Main {
         System.out.println(prostokat.przekatna());
         System.out.println(prostokat.obwod());
         System.out.println(prostokat.pole());
+
+        MyNumber myNumber = new MyNumber(5);
+        System.out.println("myNumber.isOdd()) = " + myNumber.isOdd());
+        System.out.println("myNumber.isEven()) = " + myNumber.isEven());
+        System.out.println("myNumber.sqrt()) = " + myNumber.sqrt());
+        System.out.println("myNumber.pow(new MyNumber(2))) = " + myNumber.pow(new MyNumber(2)));
+        System.out.println("myNumber.add(new MyNumber(2))) = " + myNumber.add(new MyNumber(2)));
+        System.out.println("myNumber.subtract(new MyNumber(2))) = " + myNumber.subtract(new MyNumber(2)));
+
     }
 }
