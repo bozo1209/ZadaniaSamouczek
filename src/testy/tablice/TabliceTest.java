@@ -30,6 +30,5 @@ class TabliceTest {
         int[] ints = {1,2,3};
         int[] ints2 = {3,2,1};
         assertTrue(Arrays.equals(ints2, tablice.odwrocenieKolejnosci(ints)));
-//        assertTrue(Arrays.equals(ints2, ints));
     }
 }
