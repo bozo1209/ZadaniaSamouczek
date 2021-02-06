@@ -1,13 +1,15 @@
+package zadania;
+
 /**
- * 1. Utwórz klasę Human reprezentującą człowieka, musi posiadać atrybuty takie jak wiek, waga, wzrost, imię i płeć. Klasa powinna także zawierać metody getAge, getWeight, getHeight, getName, isMale.
+ * 1. Utwórz klasę zadania.Human reprezentującą człowieka, musi posiadać atrybuty takie jak wiek, waga, wzrost, imię i płeć. Klasa powinna także zawierać metody getAge, getWeight, getHeight, getName, isMale.
  * 2. Utwórz klasę reprezentującą prostokąt, musi posiadać atrybuty długość i szerokość. Klasa powinna posiadać metody obliczające pole, obwód i długość przekątnej.
- * 3. Utwórz klasę o nazwie MyNumber, której jedyny konstruktor przyjmuje liczbę. Klasa powinna mieć następujące metody
- * 4. MyNumber isOdd() – true jeśli atrybut jest nieparzysty,
- * 5. MyNumber isEven() – true jeśli atrybut jest parzysty,
- * 6. MyNumber sqrt() – pierwiastek z atrybutu,
- * 7. MyNumber pow(MyNumber x) – atrybut podniesiony do potęgi x (przydatnej metody poszukaj w javadoc do klasy Math),
- * 8. MyNumber add(MyNumber x) – zwraca sumę atrybutu i x opakowaną w klasę MyNumber,
- * 9. MyNumber subtract(MyNumber x) – zwraca różnicę atrybutu i x opakowaną w klasę MyNumber.
+ * 3. Utwórz klasę o nazwie zadania.MyNumber, której jedyny konstruktor przyjmuje liczbę. Klasa powinna mieć następujące metody
+ * 4. zadania.MyNumber isOdd() – true jeśli atrybut jest nieparzysty,
+ * 5. zadania.MyNumber isEven() – true jeśli atrybut jest parzysty,
+ * 6. zadania.MyNumber sqrt() – pierwiastek z atrybutu,
+ * 7. zadania.MyNumber pow(zadania.MyNumber x) – atrybut podniesiony do potęgi x (przydatnej metody poszukaj w javadoc do klasy Math),
+ * 8. zadania.MyNumber add(zadania.MyNumber x) – zwraca sumę atrybutu i x opakowaną w klasę zadania.MyNumber,
+ * 9. zadania.MyNumber subtract(zadania.MyNumber x) – zwraca różnicę atrybutu i x opakowaną w klasę zadania.MyNumber.
  */
 
 
