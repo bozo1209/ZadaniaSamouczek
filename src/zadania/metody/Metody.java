@@ -1,3 +1,5 @@
+package zadania.metody;
+
 /**
  * 1. Napisz metodę, która zwróci Twój aktualny wiek.
  * 2. Napisz metodę, która zwróci Twoje imię,
