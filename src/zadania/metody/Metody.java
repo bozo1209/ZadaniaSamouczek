@@ -1,4 +1,4 @@
-package zadania;
+package zadania.metody;
 
 /**
  * 1. Napisz metodę, która zwróci Twój aktualny wiek.
