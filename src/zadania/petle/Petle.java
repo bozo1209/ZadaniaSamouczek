@@ -1,6 +1,5 @@
 package zadania.petle;
 
-import java.util.Arrays;
 
 public class Petle {
 
@@ -37,6 +36,22 @@ public class Petle {
             wynik[i] = tekstDoOdwrocenia[liczbaZnakow - 1 - i];
         }
         return new String(wynik);
+    }
+
+//    zad 6
+    public long przeksztalcanieDoFormyBinarnej(long x){
+        long liczba = x;
+        StringBuilder stringBuilder = new StringBuilder();
+        Petle petle = new Petle();
+        while (liczba > 0){
+            if (liczba % 2 == 0){
+                stringBuilder.append(0);
+            }else {
+                stringBuilder.append(1);
+            }
+            liczba = liczba / 2;
+        }
+        return Long.parseLong(petle.odwoconyString(stringBuilder.toString()));
     }
 }
 
