@@ -53,5 +53,12 @@ public class Petle {
         }
         return Long.parseLong(petle.odwoconyString(stringBuilder.toString()));
     }
+
+//    zad 7
+    public boolean czyPalindrom(String tekst){
+        Petle petle = new Petle();
+        return tekst.equals(petle.odwoconyString(tekst));
+    }
 }
+
 
