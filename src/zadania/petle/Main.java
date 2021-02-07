@@ -9,5 +9,6 @@ public class Main {
         petle.odZeraDoX(5);
         petle.odZeraDoX2(5);
 
+        petle.wypisujeLiczbeOdOstatniejCyfry(12345678987654321L);
     }
 }
