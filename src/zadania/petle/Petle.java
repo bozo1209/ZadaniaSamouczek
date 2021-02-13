@@ -3,7 +3,7 @@ package zadania.petle;
 
 public class Petle {
 
-//    zad 1
+    //    zad 1
     protected void odZeraDoX(int x){
         for(int i = 0; i <= x; i++){
             System.out.println(i);
