@@ -2,7 +2,7 @@ package zadania.obiekty;
 
 public class Main {
     public static void main(String[] args) {
-        Human human = new Human("Stefan", "m", 50, 174, 88);
+        Human human = new Human("Stefan", "m", 50, 174.0, 88.0);
         System.out.println(human.getImie());
         System.out.println(human.getPlec());
         System.out.println(human.getWiek());
