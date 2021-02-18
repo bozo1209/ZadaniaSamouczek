@@ -1,6 +1,8 @@
 package zadania.petle;
 
 
+import java.util.Arrays;
+
 public class Petle {
 
     //    zad 1
@@ -58,6 +60,28 @@ public class Petle {
     public boolean czyPalindrom(String tekst){
         Petle petle = new Petle();
         return tekst.equals(petle.odwoconyString(tekst));
+    }
+
+//    zad 9
+    public String wyswietlenie(int[] x){
+        return Arrays.toString(x);
+    }
+
+//    zad 10
+    public int[] sortowanieOdNajmniejszejDoNajwiekszej(int[] x){
+        int n = 0;
+        int temp;
+        while (n < x.length){
+            for (int i = 0; i < x.length; i++){
+                if (x[i] > x[n]){
+                    temp = x[i];
+                    x[i] = x[n];
+                    x[n] = temp;
+                }
+            }
+            n++;
+        }
+        return x;
     }
 }
 

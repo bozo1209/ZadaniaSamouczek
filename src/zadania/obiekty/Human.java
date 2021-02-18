@@ -7,11 +7,11 @@ package zadania.obiekty;
 public class Human {
     private final String imie;
     private final String plec;
-    private final int wiek;
-    private final double wzrost;
-    private final double waga;
+    private final Integer wiek;
+    private final Double wzrost;
+    private final Double waga;
 
-    public Human(String imie, String plec, int wiek, double wzrost, double waga) {
+    public Human(String imie, String plec, Integer wiek, Double wzrost, Double waga) {
         this.imie = imie;
         this.plec = plec;
         this.wiek = wiek;

@@ -20,7 +20,7 @@ public class ArrayFactory {
 
 //    zad 9
     public int[][] macierzJednostkowa(){
-        int[][] macierz = new int[x][x];
+        int[][] macierz = twoDimension();
         for (int i = 0; i < x; i++){
             for (int j = 0; j < x; j++){
                 if (i == j){

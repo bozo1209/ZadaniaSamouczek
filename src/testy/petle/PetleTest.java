@@ -53,4 +53,14 @@ class PetleTest {
                 () -> assertEquals(test3, petle.czyPalindrom(tekst3))
         );
     }
+
+    @Test
+    void sortowanieOdNajmniejszejDoNajwiekszejTest(){
+        int[] tablica1 = {5,4, 6, 2, 11,3,2,1};
+        int[] tablica2 = {5,4, 6, 2, 11,3,2,1};
+        Arrays.sort(tablica2);
+        assertTrue(Arrays.equals(
+                tablica2,
+                petle.sortowanieOdNajmniejszejDoNajwiekszej(tablica1)));
+    }
 }
