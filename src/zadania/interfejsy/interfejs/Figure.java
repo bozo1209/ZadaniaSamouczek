@@ -5,4 +5,5 @@ public interface Figure {
 
     double getPerimeter(double bok1Promien, double bok2, double bok3);
     double getArea(double wysokoscPromien, double podstawa);
+    double[] getDateFromUser();
 }
