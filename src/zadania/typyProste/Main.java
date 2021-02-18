@@ -7,5 +7,7 @@ public class Main {
         typyProste.calkowitaDoBinarnejWyswietlenie();
 
         typyProste.wyswietlanieTablicyOdNajmniejszejDoNajwiekszej();
+
+        typyProste.wyswietlaDlugoscCzyPalidromOdwroconaWartosc();
     }
 }

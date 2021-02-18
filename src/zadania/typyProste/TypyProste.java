@@ -7,11 +7,12 @@ import java.util.Scanner;
 
 public class TypyProste {
 
+    private final Petle petle = new Petle();
+    private final Scanner scanner = new Scanner(System.in);
+
 //    zad 2
     public void calkowitaDoBinarnejWyswietlenie(){
 //        wyświetla błąd przy wyższych wartościach bo się nie mieści w longu
-        Petle petle = new Petle();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("podaj liczbę całkowitą do zmiany na binarną");
         long x = scanner.nextLong();
         System.out.println("Twoja liczba: " + x + " w postaci binarnej: ");
@@ -21,7 +22,7 @@ public class TypyProste {
 //    zad 3
     private int pobieranieRozmiaruTablicy(){
         System.out.println("podaj rozmiar tablicy: ");
-        return new Scanner(System.in).nextInt();
+        return scanner.nextInt();
     }
 
     private int[] pobieranieElementowTablicy(){
@@ -29,15 +30,23 @@ public class TypyProste {
         int[] tablica = new int[rozmiarTablicy];
         for (int i = 0; i < rozmiarTablicy; i++){
             System.out.println("podaj element " + (i + 1) + " z " + rozmiarTablicy + ": ");
-            tablica[i] = new Scanner(System.in).nextInt();
+            tablica[i] = scanner.nextInt();
         }
         return tablica;
     }
 
     public void wyswietlanieTablicyOdNajmniejszejDoNajwiekszej(){
-        Petle petle = new Petle();
         int[] tablicaDoWyswietlenia = petle.sortowanieOdNajmniejszejDoNajwiekszej(pobieranieElementowTablicy());
         System.out.println(Arrays.toString(tablicaDoWyswietlenia));
+    }
+
+//    zad 4
+    public void wyswietlaDlugoscCzyPalidromOdwroconaWartosc(){
+        System.out.println("podaj tekst: ");
+        String tekst = scanner.nextLine();
+        System.out.println("długość znaków: " + tekst.length());
+        System.out.println("palindron: " + petle.czyPalindrom(tekst));
+        System.out.println("odwrócona wartość: " + petle.odwoconyString(tekst));
     }
 }
 
